@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    position: fixed; 
+    width: 100%;
+    top: 0%;
+    left: 0;
+  background-color: #0d0909;
+  color: rgb(247, 240, 240);
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-between;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+body {
+  padding-top: 80px; /* Pushes content down so it doesn’t overlap */
+}
+
+.logo img {
+  width: 100px;
+  height: 80px;
+  /* max-height: 60px; */
+}
+
+.logocont {
+  display: flex;
+  align-items: flex-start;
+  gap: -5px;
+}
+
+.logotext {
+  position: relative;
+  top: 15px;
+  font-size: 30px;
+}
+
+span {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navlinks {
+  margin-left: 35%;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: rgb(100, 95, 95);
+  transition: background 0.5s ease;
+}
+
+button:hover {
+  background-color: #1a3749; /* Darker blue on hover */
+}
+button a {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+section {
+  height: 100vh; /* Adjust height as needed */
+}
+
+.watchhero {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -2px; /* Slightly tighter letters */
+  color: #000; /* Black text */
+  position: absolute; /* Positioning */
+  top: 25%; /* Adjust as needed */
+  left: 5%; /* Move to the left */
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+#home {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: #9e9292;
+  overflow: hidden;
+  padding: 0; /* Remove any extra padding */
+  margin: 3px; /* Remove any extra margin */
+}
+
+#home img {
+  width: 100vw; /* Ensure it covers full width */
+  height: 100vh; /* Ensure it covers full height */
+  object-fit: cover; /* Ensure it fills without distortion */
+}
+
+.btn {
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s;
+    left: 10%;
+}
