@@ -13,26 +13,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="index.css" />
+<script src="https://kit.fontawesome.com/ecd3104a10.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="logocont">
         <div class="logo">
-          <a href="##"><img src="images/logo.png" alt="logo" /></a>
+          <a href="#home"><img src="images/logo.png" alt="logo" /></a>
         </div>
         <span class="logotext">Health Watch</span>
       
       <div class="navlinks">
-      <button><a href="index.html">HOME</button></a>
-      <button><a href="#about">ABOUT</button></a>
-      <button><a href="#features">FEATURES</button></a>
-      <button><a href="#preorder">PRE-ORDER</button></a>
-      <button><a href="#contact">CONTACT</button></a>
+      <button><a href="index.html">HOME</a></button>
+    <button><a href="#about">ABOUT</a></button>
+      <button><a href="#features">FEATURES</a></button>
+  <button><a href="#preorder">PRE-ORDER</a></button>
+     <button><a href="#contact">CONTACT</a></button>
       </div>
-        </div>
     </header>
-
     <section id="home">
       <div class="container">
         <h2 class="watchhero">HEALTH <br>WATCH</h2>
@@ -43,20 +45,129 @@
     </section>
     
     <section id="about">
-        <h1>About Section</h1>
+        <div class="abit">
+          <h1>ABOUT</h1>
+          <p>Health Watch, a smart watch and personal health companion.</p>
+          <h3>Different watch straps and band designs to match a wide variety of watch faces.</h3>
+        </div>
+        <div class="watch-container">
+        <div class="watch-item">
+            <img src="images/watch about.png" alt="Watch 1">
+        </div>
+        <div class="watch-item">
+            <img src="images/watch about2.png" alt="Watch 2">
+        </div>
+        <div class="watch-item">
+            <img src="images/about watch3.png " alt="Watch 3">
+        </div>
+      
+    </div>
     </section>
 
     <section id="features">
-        <h1>Services Section</h1>
-    </section>
-
+             <div class="feature-text">
+            <h2>FEATURES</h2>
+               <h4>&middot;<span style="font-weight: bold;">Heart Rate Monitoring</span>– Track your heart rate 24/7.</h4>
+               <h4>&middot;<span style="font-weight: bold;">Sleep Tracking</span>– Monitor sleep quality and patterns.</h4>
+               <h4>&middot;<span style="font-weight: bold;">Step & Calorie Counter</span> – Stay on top of your daily activity.</h4>
+               <h4>&middot;<span style="font-weight: bold;">Smart Alerts</span>– Get notifications for calls & messages.</h4>
+               <h4>&middot;<span style="font-weight: bold;">Blood Oxygen (SpO2) Sensor</span>– Keep an eye on your oxygen levels</h4>
+        </div>
+        <img src="images/Screenshot 2025-04-02 130511.png" alt="Watch 5" class="features">
+      </section>
+      <div class="notification" id="notification">
+  ✅ You'll be notified once it's available!
+</div>
     <section id="preorder">
-        <h1>preorder</h1>
+        <h2>PRE-ORDER</h2>
+  <div class="preorder-container">
+    <div class="product-image">
+      <img src="images/about watch3.png" alt="Smart Watch Image">
+    </div>
+    <div class="product-info">
+      <h3>Smart Watch</h3>
+      <p class="price">$20.00</p>
+
+      <label for="quantity">Quantity</label>
+      <div class="quantity-selector">
+        <button onclick="changeQuantity(-1)">-</button>
+        <input type="text" id="quantityInput" value="1" readonly>
+        <button onclick="changeQuantity(1)">+</button>
+      </div>
+      
+      <button class="coming-soon" onclick="openModal()">Notify Me</button>
+    </div>
+  </div>
     </section>
 
+    <div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Get Notified</h3>
+    <p>Enter your email and we’ll let you know when it’s ready!</p>
+    <input type="email" id="emailInput" placeholder="you@example.com">
+    <button onclick="submitEmail()">Submit</button>
+  </div>
+</div>
     <section id="contact">
-        <h1>Contact Section</h1>
+         <h2 class="conc">CONTACT</h2>
+  
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="6" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+
+    <!-- Map -->
+    <div class="contact-map">
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.195062498074!2d7.421929875962446!3d10.510465189622076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10558c10e3b3918b%3A0x2c44e7b1ff292e66!2sKaduna%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1712841505821!5m2!1sen!2sng" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+
+    </div>
+  </div>
+
     </section>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" />
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>About</h4>
+        <a href="#">Project</a>
+        <a href="#">Features</a>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <a href="#">Careers</a>
+        <a href="#">Brand Assets</a>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>321-555-5555</p>
+        <p>info@email.com</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <div class="fb-like">Like</div>
+      <div class="x-post">X Post</div>
+    </div>
+  </div>
+
+  <hr />
+  <div class="footer-bottom">
+    <p>© 2019</p>
+  </div>
+</footer>
 
   </body>
+  <script src="script.js"></script>
 </html>
